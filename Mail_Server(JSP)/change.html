@@ -1,0 +1,49 @@
+	<html>
+	<head>
+	<script langauge="javascript">
+	function f1()
+	{
+	if(document.f.p1.value=="")
+	{
+	alert("plz enter old password")
+	}
+	else if(document.f.p2.value=="")
+	{
+	alert("plz enter new password")
+	}
+	else if(document.f.p2.value!=document.f.p3.value)
+	{
+	alert("plz confirm password")
+	document.f.p2.focus();
+	document.f.p2.select();
+	
+	}
+	else
+	{
+	document.f.submit()
+	}
+	}
+	</script>
+	</head>
+	<body bgColor="black" topmargin=0 leftmargin=0>
+	<center><img src="banner.jpg"></center>
+	<center><table width=75% cellspacing=5>
+	<form name="f" method="post" action="change.jsp">
+	<td><font face="comic sans ms" color="lime">Old Password : </td>
+	<td><input type="password" name="p1"></td>
+	<tr>
+	<td><font face="comic sans ms" color="lime">Enter New Password : </td>
+	<td><input type="password" name="p2"></td>
+	<tr>
+	<td><font face="comic sans ms" color="lime">Confirm Password :</td>
+	<td><input type="password" name="p3"></td>
+	<tr>
+	<td><input type="reset"></td>
+	<td><input type="button" value="submit form" onClick="f1()"/></td>
+	<td></td>
+	<tr>
+	
+	</form>
+	</table></center>
+	</body>
+	</html>
